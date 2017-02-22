@@ -18,7 +18,13 @@ IF errorlevel 1 (
 )
 
 :CONNECT
-vpncli.exe -s connect vpn.acshcp.com < "C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client\answer.txt"
+:: Answer.txt is a file containing your username and password
+:: for th vpn separated by a newline character. Your path to
+:: the Cisco Anyconnect CLI application will vary depending 
+:: on whether you have 32bit or 64bit OS.
+
+"C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client\vpncli.exe" -s connect example.vpn.com < "C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client\answer.txt"
+
 exit
 
 :DISCONNECT
