@@ -28,4 +28,4 @@ IF errorlevel 1 (
 exit
 
 :DISCONNECT
-vpncli.exe disconnect
+"C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client\vpncli.exe" disconnect
