@@ -25,7 +25,11 @@ IF errorlevel 1 (
 
 "C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client\vpncli.exe" -s connect example.vpn.com < "C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client\answer.txt"
 
+:: Add code to change proxy address, proxy port, and enable proxy
+
 exit
 
 :DISCONNECT
 "C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client\vpncli.exe" disconnect
+
+:: Add code to disable proxy
